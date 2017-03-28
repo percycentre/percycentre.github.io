@@ -4,7 +4,7 @@
 body {
 	color: #54b4ff;
 	text-align: center;
-	font-family: 'Helvetica';
+	font-family: 'Open Sans';
 }
 
 
@@ -13,7 +13,6 @@ body {
 ul {
     list-style-type: none;
 		font-size: 15px;
-		font-family: 'Helvetica';
     margin: 0;
     padding-left: 10px;
 		padding-right: 10px;
@@ -30,12 +29,13 @@ li a, .dropbtn {
     color: white;
     text-align: center;
 		text-decoration: none;
-    padding: 14px 16px;
 		text-transform: uppercase;
+    padding: 14px 16px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
     background-color: #008fff;
+		font-family: 'Open Sans';
 }
 
 li.dropdown {
@@ -74,7 +74,8 @@ li.dropdown {
 .main-title {
 	color: #54b4ff;
 	font-size: 60px;
-	font-family: 'Fredoka One';
+	font-family: 'Raleway';
+	font-weight: bold;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
@@ -99,14 +100,16 @@ li.dropdown {
 .main-tagline {
 	color: #54b4ff;
 	font-size: 20px;
-	font-family: 'Fredoka One';
+	font-family: 'Raleway';
+	font-weight: bold;
 	margin-top: 50px;
 }
 
 .sub-tagline {
 	color: #54b4ff;
 	font-size: 30px;
-	font-family: 'Fredoka One';
+	font-family: 'Raleway';
+	font-weight: bold;
 	padding-bottom: 100px;
 }
 
@@ -168,13 +171,21 @@ input[type=submit]:active {
 .contact-form {
 		display: inline-block;
 		text-align: center;
-    border-radius: 20px;
+    border-radius: 4px;
     background-color: #54b4ff;
 		width: 500px;
-    padding: 15px;
+    padding: 10px;
 		margin-bottom: 100px;
 }
 
+
+/* NOTE: What's on */
+.calendar-widget iframe {
+	background-color: #54b4ff;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 100px;
+}
 
 /* NOTE: What's on */
 .whatson-widgets {
