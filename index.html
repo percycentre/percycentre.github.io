@@ -1,97 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<link rel='stylesheet' type='text/css' href='main.css'/>
-	<link href='https://fonts.googleapis.com/css?family=Raleway|Open+Sans' rel='stylesheet'>
-
-		<!-- ****** faviconit.com favicons ****** -->
-	<link rel="shortcut icon" href="/assets/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/assets/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/assets/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/assets/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
-	<link rel="apple-touch-icon" href="/assets/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/assets/favicon-144.png">
-	<meta name="msapplication-config" content="/browserconfig.xml">
-	<!-- ****** faviconit.com favicons ****** -->
-
-	<title>Percy Community Centre</title>
-</head>
-
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif}
+.w3-bar,h1,button {font-family: "Raleway", sans-serif}
+.fa-anchor,.fa-coffee {font-size: 200px}
+</style>
 <body>
-	<div class='main-nav'>
-		<ul>
-			<li><a href='index.html'>Home</a></li>
-			<li><a href='find-us.html'>Find Us</a></li>
-			<li><a href='contact.html'>Contact</a></li>
-			<li><a href='calendar.html'>Calendar</a></li>
-			<li><a href='whats-on.html'>What's On</a></li>
-			<li class='dropdown'>
-				<a href='#' class='about-button'>About</a>
-				<div class='dropdown-content'>
-					<a href='about-main.html'>Our History</a>
-					<a href='about-staff.html'>Our Staff</a>
-					<a href='about-staff.html'>Our Facilities</a>
-				</div>
-			<li class='dropdown'>
-				<a href='#' class='facilities-button'>Room Hire</a>
-				<div class='dropdown-content'>
-					<a href='#'>The Den</a>
-					<a href='#'>The Annex</a>
-					<a href='#'>Conference Room</a>
-					<a href='#'>Meeting Room</a>
-					<a href='#'>Recording Studio</a>
-					<a href='#'>Media Suite</a>
-					<a href='#'>Sports Hall</a>
-					<a href='#'>MUGA</a>
-				</div>
-			</li>
-		</ul>
-	</div>
 
-	<div class='main-title'>
-		Percy Community Centre
-	</div>
+<div class='favicons'>
+	<!-- ****** faviconit.com favicons ****** -->
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="/assets/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/assets/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <!-- ****** faviconit.com favicons ****** -->
+</div>
 
-	<div class='main-header'>
-		<!-- NOTE: black outline and dropshadow version here: -->
-		<!-- NOTE: 'http://i.imgur.com/Ocmuvwv.png' -->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="find-us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Find us</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Calendar</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">What's on</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
 
-		<img src=	'http://i.imgur.com/8aaldbx.png'/>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="find-us" class="w3-bar-item w3-button w3-padding-large">Find us</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Calendar</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">What's on</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
 
-	</div>
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Percy Community Centre</h1>
+  <p class="w3-xlarge">A vibrant community centre in the heart of Bath</p>
+</header>
 
-	<div class='main-body'>
-			The Percy Centre is a vibrant and friendly community centre located in the heart of Bath.
-			Community resources for personal development and extracurricular activities for all ages -
-			youth projects, music, dance, holiday play groups...
-	</div>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Who we are</h1>
+      <h5 class="w3-padding-32">The percy centre is a venue for hire [etc]</h5>
 
-	<div class='main-tagline'>
-			...and so much more!
-	</div>
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
-	<div class='sub-tagline'>
-			Room hire from 9/hr.
-	</div>
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+    </div>
+  </div>
+</div>
 
-	<div class='main-footer'>
-			&copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
-			<br>
-			Percy Community Centre, New King Street, Bath, Somerset, BA1 2BN. Tel. 01225 423014. Charity no. 1127986, Company no. 6769345.
-	</div>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-blue w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>What we do</h1>
+      <h5 class="w3-padding-32">
+          The centre plays host to a wide variety of community resources for personal development
+          and extracurricular activities for all ages - youth projects, music, dance, holiday play groups - and much more besides!
+      </h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-blue w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">... so come along and have a look!</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+
+ &copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
+ <br>
+ Percy Community Centre, New King Street, Bath, Somerset, BA1 2BN. Tel. 01225 423014. Charity no. 1127986, Company no. 6769345.
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>
