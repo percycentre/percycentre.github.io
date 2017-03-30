@@ -1,91 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<link rel='stylesheet' type='text/css' href='main.css'/>
-	<link href='https://fonts.googleapis.com/css?family=Raleway|Open+Sans' rel='stylesheet'>
-
-		<!-- ****** faviconit.com favicons ****** -->
-	<link rel='shortcut icon' href='/assets/favicon.ico'>
-	<link rel='icon' sizes='16x16 32x32 64x64' href='/assets/favicon.ico'>
-	<link rel='icon' type='image/png' sizes='196x196' href='/assets/favicon-192.png'>
-	<link rel='icon' type='image/png' sizes='160x160' href='/assets/favicon-160.png'>
-	<link rel='icon' type='image/png' sizes='96x96' href='/assets/favicon-96.png'>
-	<link rel='icon' type='image/png' sizes='64x64' href='/assets/favicon-64.png'>
-	<link rel='icon' type='image/png' sizes='32x32' href='/assets/favicon-32.png'>
-	<link rel='icon' type='image/png' sizes='16x16' href='/assets/favicon-16.png'>
-	<link rel='apple-touch-icon' href='/assets/favicon-57.png'>
-	<link rel='apple-touch-icon' sizes='114x114' href='/assets/favicon-114.png'>
-	<link rel='apple-touch-icon' sizes='72x72' href='/assets/favicon-72.png'>
-	<link rel='apple-touch-icon' sizes='144x144' href='/assets/favicon-144.png'>
-	<link rel='apple-touch-icon' sizes='60x60' href='/assets/favicon-60.png'>
-	<link rel='apple-touch-icon' sizes='120x120' href='/assets/favicon-120.png'>
-	<link rel='apple-touch-icon' sizes='76x76' href='/assets/favicon-76.png'>
-	<link rel='apple-touch-icon' sizes='152x152' href='/assets/favicon-152.png'>
-	<link rel='apple-touch-icon' sizes='180x180' href='/assets/favicon-180.png'>
-	<meta name='msapplication-TileColor' content='#FFFFFF'>
-	<meta name='msapplication-TileImage' content='/assets/favicon-144.png'>
-	<meta name='msapplication-config' content='/browserconfig.xml'>
-	<!-- ****** faviconit.com favicons ****** -->
-
-	<title>Calendar</title>
-</head>
-
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif}
+.bar,h1,button {font-family: "Raleway", sans-serif}
+.fa-anchor,.fa-coffee {font-size: 200px}
+</style>
 <body>
-	<div class='main-nav'>
-		<ul>
-			<li><a href='index.html'>Home</a></li>
-			<li><a href='find-us.html'>Find Us</a></li>
-			<li><a href='contact.html'>Contact</a></li>
-			<li><a href='calendar.html'>Calendar</a></li>
-			<li><a href='whats-on.html'>What's On</a></li>
-			<li class='dropdown'>
-				<a href='#' class='about-button'>About</a>
-				<div class='dropdown-content'>
-					<a href='about-main.html'>Our History</a>
-					<a href='about-staff.html'>Our Staff</a>
-					<a href='about-staff.html'>Our Facilities</a>
-				</div>
-			<li class='dropdown'>
-				<a href='#' class='facilities-button'>Room Hire</a>
-				<div class='dropdown-content'>
-					<a href='#'>The Den</a>
-					<a href='#'>The Annex</a>
-					<a href='#'>Conference Room</a>
-					<a href='#'>Meeting Room</a>
-					<a href='#'>Recording Studio</a>
-					<a href='#'>Media Suite</a>
-					<a href='#'>Sports Hall</a>
-					<a href='#'>MUGA</a>
-				</div>
-			</li>
-		</ul>
-	</div>
 
-	<div class='main-title'>
-		Calendar
-	</div>
+<div class='favicons'>
+	<!-- ****** faviconit.com favicons ****** -->
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="/assets/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/assets/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/assets/favicon-144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <!-- ****** faviconit.com favicons ****** -->
+</div>
 
-	<div class='main-body'>
-		Curious about what's booked this week? Have a look!
-	</div>
+<!-- Navbar -->
+<div class="top">
+  <div class="bar blue card-2 left-align large">
+    <a class="bar-item button hide-medium hide-large right padding-large hover-white large blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="bar-item button hide-small padding-large hover-white"><i class="fa fa-home margin-right"></i>Home</a>
+    <a href="find-us.html" class="bar-item button hide-small padding-large hover-white">Find us</a>
+    <a href="calendar.html" class="bar-item button hide-small padding-large hover-white">Calendar</a>
+    <a href="whats-on.html" class="bar-item button hide-small padding-large hover-white">What's on</a>
+    <a href="contact.html" class="bar-item button hide-small padding-large hover-white">Contact</a>
 
-  <div class='calendar-widget'>
-		<iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=percycentre.org.uk_rrb732u3cu8dss2ng5bfvbf894%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=Europe%2FLondon"
-						style="border-width:10"
-						width="500"
-						height="500"
-						style="border:0"
-						frameborder="0"
-						scrolling="no">
-		</iframe>
   </div>
 
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium large">
+    <a href="find-us.html" class="bar-item button padding-large">Find us</a>
+    <a href="calendar.html" class="bar-item button padding-large">Calendar</a>
+    <a href="whats-on.html" class="bar-item button padding-large">What's on</a>
+    <a href="about.html" class="bar-item button padding-large">About</a>
+    <a href="contact.html" class="bar-item button padding-large">Contact</a>
+  </div>
+</div>
 
-	<div class='main-footer'>
-			&copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
-			<br>
-			Percy Community Centre, New King Street, Bath, Somerset, BA1 2BN. Tel. 01225 423014. Charity no. 1127986, Company no. 6769345.
-	</div>
+<!-- Header -->
+<header class="container blue center opacity" style="padding:128px 16px">
+  <h1 class="margin jumbo">Percy Community Centre</h1>
+  <p class="xlarge">A vibrant community centre in the heart of Bath</p>
+</header>
+
+<!-- First Grid -->
+<div class="row-padding padding-64 container">
+  <div class="content center">
+    <div class="center">
+      <h1>Calendar</h1>
+      <p class="text-grey padding-16">
+        Curious about what clubs / events are booked for the next few weeks?
+      </p>
+      <div class="site-widget">
+          <iframe src="https://calendar.google.com/calendar/embed?showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=percycentre.org.uk_rrb732u3cu8dss2ng5bfvbf894%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=Europe%2FLondon"
+                  style="border-width:0"
+                  width="500"
+                  height="500"
+                  style="border: 0"
+                  frameborder="0"
+                  scrolling="no">
+          </iframe>
+      </div>
+    </div>
+
+    <div class="third center">
+
+    </div>
+  </div>
+</div>
+
+<div class="container blue center opacity padding-64">
+    <h1 class="margin xlarge">Your centre. Your community.</h1>
+</div>
+
+<!-- Footer -->
+<footer class='container padding-64 center opacity'>
+  Check out our social media for news and updates!
+  <div class='jumbo padding-32'>
+    <i class='fa fa-facebook-official hover-opacity text-blue'><a href='https://www.facebook.com/percycentre'></a></i>
+    <i class='fa fa-twitter hover-opacity text-blue'><a href='http://twitter.com/percycentre'></a></i>
+ </div>
+<p class="small">
+  Percy Community Centre, New King Street, Bath, Somerset, BA1 2BN. Tel. 01225 423014. Charity no. 1127986, Company no. 6769345.
+</p>
+<p class="tiny">
+  &copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
+</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
 
 </body>
 </html>
