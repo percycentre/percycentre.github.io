@@ -40,30 +40,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 
 <!-- Navbar -->
 <div class='top'>
-  <div class='bar blue card-2 left-align large'>
-    <a class='bar-item button hide-medium hide-large right padding-large hover-white large blue' href='javascript:void(0);' onclick='myFunction()' title='Toggle Navigation Menu'>
-      <i class='fa fa-bars'></i></a>
-    <a href='index.html' class='bar-item button hide-small padding-large hover-white'><i class='fa fa-home margin-right'></i>Home</a>
-    <a href='find-us.html' class='bar-item button hide-small padding-large hover-white'>Find us</a>
-    <a href='calendar.html' class='bar-item button hide-small padding-large hover-white'>Calendar</a>
-    <a href='contact.html' class='bar-item button hide-small padding-large hover-white'>Contact</a>
-      <div href='#' class='dropdown-hover hide-small'>
-        <button class='button'>About <i class='fa fa-caret-down'></i></button>
-        <div class='dropdown-content card-4 bar-block'>
-          <a href='#' class='bar-item button'>Staff</a>
-          <a href='#' class='bar-item button'>Facilities</a>
-          <a href='#' class='bar-item button'>History</a>
-        </div>
-      </div>
+ <div class='bar blue large left-align'>
+    <a class="bar-item button hide-medium hide-large hover-white" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="bar-item button hover-white"><i class="fa fa-home"></i></a>
+    <a href='find-us.html' class='bar-item button hide-small hover-white'>Find us</a>
+    <a href='calendar.html' class='bar-item button hide-small hover-white'>Calendar</a>
+    <a href='contact.html' class='bar-item button hide-small hover-white'>Contact</a>
+    <div class='dropdown-hover hide-small'>
+    <button class='button hover-white' title='Notifications'>About <i class='fa fa-caret-down'></i></button>
+    <div class='dropdown-content card-4 bar-block'>
+      <a href='about-main' class='bar-item button medium'>History</a>
+      <a href='about-staff' class='bar-item button medium'>Staff</a>
+      <a href='about-facilities' class='bar-item button medium'>Facilities</a>
+    </div>
   </div>
+ </div>
 
   <!-- Navbar on small screens -->
-  <div id='navDemo' class='bar-block white hide hide-large hide-medium large'>
-    <a href='find-us.html' class='bar-item button padding-large'>Find us</a>
-    <a href='calendar.html' class='bar-item button padding-large'>Calendar</a>
-    <a href='whats-on.html' class='bar-item button padding-large'>What's on</a>
-    <a href='about.html' class='bar-item button padding-large'>About</a>
-    <a href='contact.html' class='bar-item button padding-large'>Contact</a>
+  <div id='navMicro' class='bar-block blue hide hide-large hide-medium'>
+    <a href='#' class='bar-item button hover-white'>Find us</a>
+    <a href='#' class='bar-item button hover-white'>Calendar</a>
+    <a href='#' class='bar-item button hover-white'>Contact</a>
+    <a href='#' class='bar-item button hover-white'>About</a>
   </div>
 </div>
 
@@ -143,22 +141,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 
 <!-- Footer -->
 <footer class='container padding-64 center'>
-<p class="small opacity">
+<p class='small opacity'>
   Percy Community Centre, New King Street, Bath, Somerset, BA1 2BN. Tel. 01225 423014. Charity no. 1127986, Company no. 6769345.
 </p>
-<p class="tiny opacity">
+<p class='tiny opacity'>
   &copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
 </p>
 </footer>
 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById('navDemo');
-    if (x.className.indexOf('show') == -1) {
-        x.className += ' show';
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navMicro");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
     } else {
-        x.className = x.className.replace(' show', '');
+        x.className = x.className.replace(" show", "");
     }
 }
 </script>
