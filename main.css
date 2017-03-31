@@ -563,4 +563,8 @@ span.display-hover{display:inline-block}
 .border-black,.hover-border-black:hover{border-color:#000!important}
 .border-grey,.hover-border-grey:hover,.border-gray,.hover-border-gray:hover{border-color:#bbb!important}
 
-.site-widget iframe{background-color: darkgrey; padding: 10px; border-radius: 8px}
+.site-widget iframe {
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 8px
+}
