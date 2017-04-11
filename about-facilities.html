@@ -10,9 +10,8 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 .bar,h1,button {font-family: 'Raleway', sans-serif}
 .fa-anchor,.fa-coffee {font-size: 200px}
-<style>
+.panel-header{font-family: 'Raleway', sans-serif}
 .mySlides {display:none}
-</style>
 
 </style>
 <body>
@@ -79,76 +78,71 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 </header>
 
 <!-- First Grid -->
-<div class='mySlides'>
-  <div class='row-padding padding-64 container'>
-    <div class='content'>
-      <div class='center'>
-        <h1>Our Facilities</h1>
+<div class='row-padding padding-64 container'>
+  <div class='content'>
+    <div class='center'>
+      <h1>About our Facilities</h1>
 
-        <h5 class='padding-16'>
-          The Percy Centre boasts a wide range of versatile spaces for private
-          and commercial hire.
-        </h5>
-
-        <p class='text-grey'>
-          The centre plays host to a wide variety of community resources for
-          personal development and extracurricular activities for all ages -
-          youth projects, music, dance, holiday play groups - and much more besides!
-          Each of our spaces is unique.
-          To make choosing the right space for your activity or event easier,
-          we've provided the <b>specifications</b> for all of our rooms as well as
-          <b>additional features</b> and <b>accessability information</b> below.
-        </p>
-      </div>
+      <p class='text-grey'>
+        The Percy Centre boasts a wide range of versatile spaces for private
+        and commercial hire. The centre plays host to a huge variety of community resources for
+        personal development and extracurricular activities for all ages -
+        youth projects, music, dance, holiday play groups - and much more besides!
+        Each of our spaces can be tailored to suit your needs, and are made accessible to everyone.
+        To make choosing the right space for your activity or event easier,
+        we've provided the <b>specifications</b> for all of our rooms as well as
+        <b>additional features</b> and <b>accessability information</b> below.
+      </p>
     </div>
   </div>
 </div>
 
-<div class='mySlides'>
-  <div class='row-padding padding-64 container'>
-    <div class='content'>
-      <div class='center'>
-        <h5 class='padding-16'>
-          First Floor
-        </h5>
-          <h1>Sports Hall</h1>
-
-
-        <p class='text-grey'>
-          The sports hall is rad. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore
-          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Second Grid -->
 <div class='row-padding light-grey padding-64 container'>
   <div class='content'>
-    <div class='center'>
-      <div class='content card-4' style='max-width:800px'>
-        <img class='mySlides' src='assets/img_nature_wide.jpg' style='width:100%'>
-        <img class='mySlides' src='assets/img_fjords_wide.jpg' style='width:100%'>
-        <img class='mySlides' src='assets/img_mountains_wide.jpg' style='width:100%'>
-      </div>
 
-      <div class='center'>
-        <div class='section'>
-          <button class='button round-large' onclick='plusDivs(-1)'>Prev</button>
-          <button class='button round-large' onclick='plusDivs(1)'>Next</button>
+    <div class='display-container mySlides'>
+      <img class='round-large' src='assets/img_fjords_wide.jpg' style='width:100%'>
+      <div class='center panel container padding-16 blue round-large'>
+        <div class='left-align half xlarge panel-header'>
+          Reception
         </div>
-        <button class='button demo round-large' onclick='currentDiv(1)'>Centre</button>
-        <button class='button demo round-large' onclick='currentDiv(2)'>Sports Hall</button>
       </div>
     </div>
+
+    <div class='display-container mySlides'>
+      <img class='round-large' src='assets/img_fjords_wide.jpg' style='width:100%'>
+      <div class='center panel container padding-16 blue round-large panel-header'>
+        <div class='left-align half xlarge'>
+          Meeting Rooms
+        </div>
+      </div>
+    </div>
+
+    <div class='display-container mySlides'>
+      <img class='round-large' src='assets/img_fjords_wide.jpg' style='width:100%'>
+      <div class='center panel container padding-16 blue round-large panel-header'>
+        <div class='left-align half xlarge'>
+          Conference Rooms
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <div class='center'>
+    <div class='section'>
+      <button class='button border round-large' onclick='plusDivs(-1)'>Prev</button>
+      <button class='button border round-large' onclick='plusDivs(1)'>Next</button>
+    </div>
+    <button class='button demo border round-large' onclick='currentDiv(1)'>1</button>
+    <button class='button demo border round-large' onclick='currentDiv(2)'>2</button>
+    <button class='button demo border round-large' onclick='currentDiv(3)'>3</button>
+  </div>
+
 </div>
+
 
 <!-- Social Media  -->
 <div class='container blue center padding-64 opacity'>
