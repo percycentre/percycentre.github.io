@@ -69,26 +69,46 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 </div>
 
 <!-- Header -->
-<header class='container card-4 blue center opacity' style='padding:32px 16px'>
-  <p class='xxxlarge'>Our History</p>
-  <p class='margin large'>Developing our local community since 1940</p>
+<header class='container center' style='padding:20px 16px'>
+</header>
+
+<!-- Header -->
+<header style='padding:20px 16px'>
 </header>
 
 <!-- First Grid -->
 <div class='row-padding padding-64 container'>
   <div class='content'>
-    <div class='twothird left'>
-      <h1 class='padding-16'>
-        The Percy Boys' Club
-      </h1>
-      <h5 class='padding-16'>
+    <div class='center'>
+      <h1>About our History</h1>
+
+      <p class='text-grey'>
+      If you want to know more about our history than what is listed here,
+      have a look at our full historical archive, where we keep all the documents
+      and historical artifacts that we have access to.
+      </p>
+
+      <a href='http://www.percycentre.org.uk/history/'
+        class='btn blue round-large padding-large xlarge'>
+        View Archives
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class='row-padding container'>
+  <div class='content'>
+    <div class='justify'>
+      <p class='text-grey'>
         The Percy Centre, started from humble beginnings as The Percy Boys' Club.
         The club was founded by Godfrey Plumbridge and Jack Wotton in 1940 and was
         originally held in the boiler house of the Percy Congregational Chapel
         (now the Elim Penticostal Church) on Charlotte Street.
         The club encouraged boys to take up boxing and table tennis as a way to
         keep them entertained and out of trouble.
-      </h5>
+      </p>
 
       <p class='text-grey'>
         By 1947 the club had moved to the Corn Market on Walcot Street, and its activities
@@ -142,8 +162,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
         providing facilities and activities for the whole community.
       </h5>
 
-
-
     </div>
   </div>
 </div>
@@ -152,10 +170,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 <div class='row-padding light-grey padding-64 container'>
   <div class='content'>
     <div class='center'>
-      <a href='http://www.percycentre.org.uk/history/'
-        class='btn blue round-large padding-large xlarge'>
-        View our full history
-      </a>
+
     </div>
 
   </div>
@@ -191,6 +206,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   &copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
 </p>
 </footer>
+
+<script>
+//Used to change slides within the slideshow of rooms
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName('mySlides');
+  var dots = document.getElementsByClassName('demo');
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(' blue', '');
+  }
+  x[slideIndex-1].style.display = 'block';
+  dots[slideIndex-1].className += ' blue';
+}
+</script>
 
 <script>
 // Used to toggle the menu on smaller screens when clicking on the menu button

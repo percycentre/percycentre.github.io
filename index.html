@@ -74,8 +74,29 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   <p class='xlarge'>A vibrant community centre in the heart of Bath</p>
 </header>
 
-<!-- First Grid -->
+<!-- Third Grid -->
 <div class='row-padding padding-64 container'>
+  <div class='content right-align'>
+
+    <!-- Slideshow -->
+    <div class='container'>
+      <div class='content' style='max-width:800px'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_1.jpg' style='width:100%'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_2.jpg' style='width:100%'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_3.jpg' style='width:100%'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_5.jpg' style='width:100%'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_6.jpg' style='width:100%'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_7.jpg' style='width:100%'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_8.jpg' style='width:100%'>
+        <img class='mySlides round-large' src='assets/general_slideshow/slide_9.jpg' style='width:100%'>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class='row-padding padding-64 light-grey container'>
   <div class='content'>
     <div class='twothird left'>
       <h1>Who we are</h1>
@@ -105,7 +126,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 </div>
 
 <!-- Second Grid -->
-<div class='row-padding light-grey padding-64 container'>
+<div class='row-padding padding-64 container'>
   <div class='content right-align'>
 
     <div class='twothird right'>
@@ -130,6 +151,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
     </div>
   </div>
 </div>
+
 
 <!-- Social Media  -->
 <div class='container card-4 blue center padding-64 opacity'>
@@ -160,6 +182,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   &copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
 </p>
 </footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
 
 <script>
 // Used to toggle the menu on smaller screens when clicking on the menu button
