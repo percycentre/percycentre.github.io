@@ -77,30 +77,59 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   <h1 class='padding-16'>Office Staff</h1>
 </div>
 
-<div class='row-padding margin-top'>
+<div class='content' style='width:75%'>
+  <div class='row-padding margin-top'>
 
-  <div class='third'>
-    <img class='round-large card-4' src='assets/roger.jpg' style='width:100%'>
-    <div class='panel round-large card-4 center light-grey'>
-      <h5>Roger Houghton</h5>
-    </div>
-  </div>
-
-  <div class='third'>
-      <img class='round-large card-4' src='assets/claire.jpg' style='width:100%'>
-      <div class='panel round-large card-4 center light-grey'>
-        <h5>Claire Alford</h5>
+    <div class='third'>
+      <img class='round-large card-4' src='assets/roger.jpg' style='width:100%'>
+      <div class='margin-top margin-bottom'>
+        <button onclick='myFunction('Demo1')' class='btn block blue round-large card-4 large'>
+          Roger
+        </button>
+        <div id='Demo1' class='container hide'>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <div class='third'>
-    <img class='round-large card-4' src='assets/teddy.jpg' style='width:100%'>
-    <div class='panel round-large card-4 center light-grey'>
-      <h5>Teddy South</h5>
+    <div class='third'>
+        <img class='round-large card-4' src='assets/claire.jpg' style='width:100%'>
+        <div class='margin-top margin-bottom'>
+          <button onclick='myFunction('Demo1')' class='btn block blue round-large card-4 large'>
+            Claire
+          </button>
+          <div id='Demo1' class='container hide'>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+    </div>
+
+      <div class='third'>
+        <img class='round-large card-4' src='assets/teddy.jpg' style='width:100%'>
+        <div class='margin-top margin-bottom'>
+          <button onclick='myFunction('Demo1')' class='btn block blue round-large card-4 large'>
+            Teddy
+          </button>
+          <div id='Demo1' class='container hide'>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
+
+
 
 </div>
+
 
 
 <!-- Second Grid -->
@@ -108,15 +137,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   <h1 class='padding-16'>The Board of Trustees</h1>
 </div>
 
-<div class='row-padding margin-top'>
+<div class='content' style='width:75%'>
+  <div class='row-padding margin-top'>
 
-  <div class='third'>
-      <img class='round-large' src='assets/img_nature.jpg' style='width:100%'>
-      <div class='panel round-large center grey'>
-        <h5>Jill Furness</h5>
-      </div>
+    <div class='third'>
+        <img class='round-large' src='assets/img_nature.jpg' style='width:100%'>
+        <div class='panel round-large center grey'>
+          <h5>Jill</h5>
+        </div>
+    </div>
+
   </div>
-
 </div>
 
 
@@ -150,6 +181,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   &copy; 2016<script>new Date().getFullYear()>2016&&document.write('-'+new Date().getFullYear());</script>, Percy Community Centre.
 </p>
 </footer>
+
+
+<!-- Javascript goes here -->
+
+<script>
+//Used to toggle accordions
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf('show') == -1) {
+        x.className += ' show';
+    } else {
+        x.className = x.className.replace(' show', '');
+    }
+}
+</script>
 
 <script>
 // Used to toggle the menu on smaller screens when clicking on the menu button
