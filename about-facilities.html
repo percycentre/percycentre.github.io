@@ -75,7 +75,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 <header class='container center' style='padding:20px 16px'>
 </header>
 
-<!-- First Grid -->
+<!-- Header Grid -->
 <div class='container padding center blue opacity'>
   <h1 class='padding-16'>Our Facilities</h1>
 </div>
@@ -83,191 +83,183 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 <!-- First Grid -->
 <div class='row-padding padding-32 container'>
   <div class='content' style='width:80%'>
-
     <div class='center'>
-      <p class='text-grey justify'>
-        The Percy Centre boasts a wide range of versatile spaces for private
-        and commercial hire. The centre plays host to a huge variety of community resources for
-        personal development and extracurricular activities for all ages -
-        youth projects, music, dance, holiday play groups - and much more besides!
-        Each of our spaces can be tailored to suit your needs, and are made accessible to everyone.
-        To make choosing the right space for your activity or event easier,
-        we've provided the <b>specifications</b> for all of our rooms as well as
-        <b>additional features</b> and <b>accessability information</b> below.
-      </p>
+
+      <div class='panel light-grey round-large padding margin-bottom card-2'>
+      <div class='center margin-bottom'>
+      <div class='section'>
+        <button class='button white border round-large' onclick='plusDivs(-1)'>Prev</button>
+        <button class='button white border round-large' onclick='plusDivs(1)'>Next</button>
+      </div>
+        <div class='margin-bottom'>
+          <button class='button demo border circle' onclick='currentDiv(1)'>1</button>
+          <button class='button demo border circle' onclick='currentDiv(2)'>2</button>
+          <button class='button demo border circle' onclick='currentDiv(3)'>3</button>
+          <button class='button demo border circle' onclick='currentDiv(4)'>4</button>
+        </div>
+      </div>
+    </div>
+      <!-- Slideshow -->
+          <!--Slide one -->
+          <div class='display-container mySlides'>
+            <img class='round-large card-4' src='assets/img_fjords_wide.jpg' style='width:100%'>
+            <div class='center panel container padding-16 light-grey round-large card-4'>
+              <div class='left-align half padding'>
+                <h3 class='xlarge panel-header'>
+                  Reception
+                </h3>
+                  <i class='fa fa-wheelchair fa-2x opacity'></i>
+                  <i class='fa fa-deaf fa-2x opacity'></i>
+                  <i class='fa fa-blind fa-2x opacity'></i>
+                  <i class='fa fa-transgender-alt fa-2x opacity'></i>
+                  <i class='fa fa-wifi fa-2x opacity'></i>
+                <p class='large'>
+                </p>
+              </div>
+
+              <div class='right-align half padding justify'>
+                <h3 class='large panel-header'>
+                  Description
+                </h3>
+                <p class='small'>
+                  Our reception area is wheelchair accessible, and our friendly staff will will
+                  do their utmost to make your visit to the centre a stress free and enjoyable
+                  experience. There is access through the main entrance via the stairs or
+                  ramp and both sets of doors are automatic. From the foyer there is
+                  access to the lift, which can accommodate two people
+                  (albeit at a bit of a squeeze) which can take you to the other floors.
+                  To the left are our ground floor spaces, and the toilets.
+                </p>
+                <p class='small'>
+                  Our staff are non-judgemental and take pride in offering equal treatment
+                  of everyone in our community regardless of race, gender identity,
+                  sexual orientation, or disability. We excersize a zero-tolerance
+                  policy towards any kind of bullying or abuse, and will respond accordingly.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!--Slide two -->
+          <div class='display-container mySlides'>
+            <img class='round-large card-4' src='assets/img_mountains_wide.jpg' style='width:100%'>
+            <div class='center panel container padding-16 light-grey round-large card-4'>
+              <div class='left-align half padding'>
+                <h3 class='xlarge panel-header'>
+                  Conference Rooms
+                </h3>
+                <i class='fa fa-wheelchair fa-2x opacity'></i>
+                <i class='fa fa-wifi fa-2x opacity'></i>
+                <i class='fa fa-coffee fa-2x opacity'></i>
+                <p class='large'>
+                        Ground Floor
+                  <br>  40ft x 18ft
+                  <br>  Commercial Rate: £23 / hr
+                  <br>  Community Rate: £15 / hr
+                </p>
+              </div>
+
+              <div class='right-align half padding justify'>
+                <h3 class='large panel-header'>
+                  Description
+                </h3>
+                <p class='small'>
+                  The Percy Centre has a number of rooms suitable for meetings,
+                  conferences and training sessions. Our rooms can accommodate up to 60
+                  people (theatre style), or up to 30 people (boardroom style). We
+                  have a range of presentation resources availablle alongside hi-speed
+                  WIFI, refreshments and catering options.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slide three -->
+          <div class='display-container mySlides'>
+            <img class='round-large card-4' src='assets/img_nature_wide.jpg' style='width:100%'>
+            <div class='center panel container padding-16 light-grey round-large card-4'>
+              <div class='left-align half padding'>
+                <h3 class='xlarge panel-header'>
+                  Actvity Room
+                </h3>
+                <i class='fa fa-wheelchair fa-2x opacity'></i>
+                <i class='fa fa-wifi fa-2x opacity'></i>
+                <i class='fa fa-coffee fa-2x opacity'></i>
+                <p class='large'>
+                        Ground Floor
+                  <br>  40ft x 18ft
+                  <br>  Commercial Rate: £23 / hr
+                  <br>  Community Rate: £15 / hr
+                </p>
+              </div>
+
+              <div class='right-align half padding justify'>
+                <h3 class='large panel-header'>
+                  Description
+                </h3>
+                <p class='small'>
+                  A versatile room with both carpeted and vinyl floor areas, ideal
+                  for children's activities. It also lends itself well to creative
+                  arts and crafts, as well as informal meetings. The room can be divided
+                  into two smaller spaces, and has a kitchen and food serving area.
+                  </form>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide four -->
+          <div class='display-container mySlides'>
+            <img class='round-large card-4' src='assets/img_fjords_wide.jpg' style='width:100%'>
+            <div class='center panel container padding-16 light-grey round-large card-4'>
+              <div class='left-align half padding'>
+                <h3 class='xlarge panel-header'>
+                  Annexe
+                </h3>
+                <i class='fa fa-wheelchair fa-2x opacity'></i>
+                <i class='fa fa-wifi fa-2x opacity'></i>
+                <i class='fa fa-coffee fa-2x opacity'></i>
+                <p class='large'>
+                        Ground Floor
+                  <br>  40ft x 18ft
+                  <br>  Commercial Rate: £23 / hr
+                  <br>  Community Rate: £15 / hr
+                </p>
+              </div>
+
+              <div class='right-align half padding justify'>
+                <h3 class='large panel-header'>
+                  Description
+                </h3>
+                <p class='small'>
+                  The Annexe is a small external space suitable for interviews,
+                  meetings, and training sessions and can accommodate up to 60
+                  people (theatre style), or up to 30 people (boardroom style). There is
+                  and internal divider that can separate the space in two, and a
+                  small kitchenette area. We have a range of presentation resources
+                  availablle, as well as refreshments and catering options.
+                  The WIFI from the main building is also available within the Annexe.
+                </p>
+                <p class='small'>
+                  The Annexe is Wheelchair accessible, but the external and internal
+                  doors are not automatic and as such clients wishing to come and go
+                  may require some additional assistance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
     </div>
   </div>
 </div>
 
-<!-- Second Grid -->
-<div class='row-padding light-grey padding-64 container'>
-  <div class='content' style='width:90%'>
 
-    <div class='center margin-bottom'>
-    <div class='section'>
-      <button class='button white border round-large' onclick='plusDivs(-1)'>Prev</button>
-      <button class='button white border round-large' onclick='plusDivs(1)'>Next</button>
-    </div>
-      <button class='button demo border circle' onclick='currentDiv(1)'>1</button>
-      <button class='button demo border circle' onclick='currentDiv(2)'>2</button>
-      <button class='button demo border circle' onclick='currentDiv(3)'>3</button>
-      <button class='button demo border circle' onclick='currentDiv(4)'>4</button>
-    </div>
-
-<!-- Slideshow -->
-    <!--Slide one -->
-    <div class='display-container mySlides'>
-      <img class='round-large card-2' src='assets/img_fjords_wide.jpg' style='width:100%'>
-      <div class='center panel container padding-16 dark-grey opacity round-large card-4'>
-        <div class='left-align half padding'>
-          <h3 class='xlarge panel-header'>
-            Reception
-          </h3>
-            <i class='fa fa-wheelchair fa-2x opacity'></i>
-            <i class='fa fa-deaf fa-2x opacity'></i>
-            <i class='fa fa-blind fa-2x opacity'></i>
-            <i class='fa fa-transgender-alt fa-2x opacity'></i>
-            <i class='fa fa-wifi fa-2x opacity'></i>
-          <p class='large'>
-          </p>
-        </div>
-
-        <div class='right-align half padding justify'>
-          <h3 class='large panel-header'>
-            Description
-          </h3>
-          <p class='small'>
-            Our reception area is wheelchair accessible, and our friendly staff will will
-            do their utmost to make your visit to the centre a stress free and enjoyable
-            experience. There is access through the main entrance via the stairs or
-            ramp and both sets of doors are automatic. From the foyer there is
-            access to the lift, which can accommodate two people
-            (albeit at a bit of a squeeze) which can take you to the other floors.
-            To the left are our ground floor spaces, and the toilets.
-          </p>
-          <p class='small'>
-            Our staff are non-judgemental and take pride in offering equal treatment
-            of everyone in our community regardless of race, gender identity,
-            sexual orientation, or disability. We excersize a zero-tolerance
-            policy towards any kind of bullying or abuse, and will respond accordingly.
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <!--Slide two -->
-    <div class='display-container mySlides'>
-      <img class='round-large card-4' src='assets/img_mountains_wide.jpg' style='width:100%'>
-      <div class='center panel container padding-16 dark-grey opacity round-large card-4'>
-        <div class='left-align half padding'>
-          <h3 class='xlarge panel-header'>
-            Conference Rooms
-          </h3>
-          <i class='fa fa-wheelchair fa-2x opacity'></i>
-          <i class='fa fa-wifi fa-2x opacity'></i>
-          <i class='fa fa-coffee fa-2x opacity'></i>
-          <p class='large'>
-                  Ground Floor
-            <br>  40ft x 18ft
-            <br>  Commercial Rate: £23 / hr
-            <br>  Community Rate: £15 / hr
-          </p>
-        </div>
-
-        <div class='right-align half padding justify'>
-          <h3 class='large panel-header'>
-            Description
-          </h3>
-          <p class='small'>
-            The Percy Centre has a number of rooms suitable for meetings,
-            conferences and training sessions. Our rooms can accommodate up to 60
-            people (theatre style), or up to 30 people (boardroom style). We
-            have a range of presentation resources availablle alongside hi-speed
-            WIFI, refreshments and catering options.
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Slide three -->
-    <div class='display-container mySlides'>
-      <img class='round-large card-4' src='assets/img_nature_wide.jpg' style='width:100%'>
-      <div class='center panel container padding-16 dark-grey opacity round-large card-4'>
-        <div class='left-align half padding'>
-          <h3 class='xlarge panel-header'>
-            Actvity Room
-          </h3>
-          <i class='fa fa-wheelchair fa-2x opacity'></i>
-          <i class='fa fa-wifi fa-2x opacity'></i>
-          <i class='fa fa-coffee fa-2x opacity'></i>
-          <p class='large'>
-                  Ground Floor
-            <br>  40ft x 18ft
-            <br>  Commercial Rate: £23 / hr
-            <br>  Community Rate: £15 / hr
-          </p>
-        </div>
-
-        <div class='right-align half padding justify'>
-          <h3 class='large panel-header'>
-            Description
-          </h3>
-          <p class='small'>
-            A versatile room with both carpeted and vinyl floor areas, ideal
-            for children's activities. It also lends itself well to creative
-            arts and crafts, as well as informal meetings. The room can be divided
-            into two smaller spaces, and has a kitchen and food serving area.
-            </form>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide four -->
-    <div class='display-container mySlides'>
-      <img class='round-large card-4' src='assets/img_fjords_wide.jpg' style='width:100%'>
-      <div class='center panel container padding-16 dark-grey opacity round-large card-4'>
-        <div class='left-align half padding'>
-          <h3 class='xlarge panel-header'>
-            Annexe
-          </h3>
-          <i class='fa fa-wheelchair fa-2x opacity'></i>
-          <i class='fa fa-wifi fa-2x opacity'></i>
-          <i class='fa fa-coffee fa-2x opacity'></i>
-          <p class='large'>
-                  Ground Floor
-            <br>  40ft x 18ft
-            <br>  Commercial Rate: £23 / hr
-            <br>  Community Rate: £15 / hr
-          </p>
-        </div>
-
-        <div class='right-align half padding justify'>
-          <h3 class='large panel-header'>
-            Description
-          </h3>
-          <p class='small'>
-            The Annexe is a small external space suitable for interviews,
-            meetings, and training sessions and can accommodate up to 60
-            people (theatre style), or up to 30 people (boardroom style). There is
-            and internal divider that can separate the space in two, and a
-            small kitchenette area. We have a range of presentation resources
-            availablle, as well as refreshments and catering options.
-            The WIFI from the main building is also available within the Annexe.
-          </p>
-          <p class='small'>
-            The Annexe is Wheelchair accessible, but the external and internal
-            doors are not automatic and as such clients wishing to come and go
-            may require some additional assistance.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
 <!-- Social Media  -->
