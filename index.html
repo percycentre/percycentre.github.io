@@ -74,12 +74,41 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   <p class='xlarge'>A vibrant community centre in the heart of Bath</p>
 </header>
 
-<!-- Third Grid -->
+<!-- First Grid -->
 <div class='row-padding padding-64 container'>
-  <div class='content right-align'>
+  <div class='content'>
+    <div class='center'>
+      <h1>Who we are</h1>
+      <div class='content' style='width:75%'>
+        <h5 class='padding-16 justify'>
+          We are a charity run by the local community and supported by local businesses to provide
+          spaces for community projects in the Bath area.
+        </h5>
+
+        <p class='text-grey justify'>
+          The centre plays host to a wide variety of community resources for personal development
+          and extracurricular activities for all ages - youth projects, music, dance,
+          holiday play groups - and much more besides!
+        </p>
+
+        <a href='about-staff.html'
+          class='btn blue round-large padding-large xlarge margin-top'>
+          About our Staff
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Grid -->
+<div class='row-padding padding-64 container light-grey'>
+  <div class='content center'>
+
+
 
     <!-- Slideshow -->
-    <div class='container'>
+    <div class='container margin-top'>
       <div class='content' style='max-width:800px'>
         <img class='mySlides round-large' src='assets/general_slideshow/slide_1.jpg' style='width:100%'>
         <img class='mySlides round-large' src='assets/general_slideshow/slide_2.jpg' style='width:100%'>
@@ -91,63 +120,51 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
         <img class='mySlides round-large' src='assets/general_slideshow/slide_9.jpg' style='width:100%'>
       </div>
     </div>
-
+    <!-- Slideshow buttons -->
+    <div class='section'>
+        <button class='button demo border circle' onclick='currentDiv(1)'>1</button>
+        <button class='button demo border circle' onclick='currentDiv(2)'>2</button>
+        <button class='button demo border circle' onclick='currentDiv(3)'>3</button>
+        <button class='button demo border circle' onclick='currentDiv(4)'>4</button>
+        <button class='button demo border circle' onclick='currentDiv(5)'>5</button>
+        <button class='button demo border circle' onclick='currentDiv(6)'>6</button>
+        <button class='button demo border circle' onclick='currentDiv(7)'>7</button>
+        <button class='button demo border circle' onclick='currentDiv(8)'>8</button>
+    </div>
+    <div class='section'>
+      <button class='button white border round-large' onclick='plusDivs(-1)'>Prev</button>
+      <button class='button white border round-large' onclick='plusDivs(1)'>Next</button>
+    </div>
   </div>
 </div>
 
-<!-- First Grid -->
-<div class='row-padding padding-64 light-grey container'>
-  <div class='content'>
-    <div class='twothird left'>
-      <h1>Who we are</h1>
-      <h5 class='padding-16'>
-        We are a charity run by the local community and supported by local businesses to provide
-        spaces for community projects in the Bath area.
-      </h5>
 
-      <p class='text-grey'>
-        The centre plays host to a wide variety of community resources for personal development
-        and extracurricular activities for all ages - youth projects, music, dance,
-        holiday play groups - and much more besides!
-      </p>
 
-      <a href='about-staff.html'
-        class='btn blue round-large padding-large xlarge margin-top'>
-        About our Staff
-      </a>
 
-    </div>
-
-    <div class='third center'>
-      <i class='padding-64 margin-right' src=''></i>
-    </div>
-
-  </div>
-</div>
-
-<!-- Second Grid -->
+<!-- Third Grid -->
 <div class='row-padding padding-64 container'>
   <div class='content right-align'>
 
-    <div class='twothird right'>
-      <h1>What we do</h1>
-      <h5 class='padding-16'>
-        The percy centre is a community and commercial venue for hire,
-        with a variety of rooms and spaces available to suit your needs.
-      </h5>
+    <div class='center'>
+      <div class='content' style='width:75%'>
+        <h1>What we do</h1>
+        <h5 class='padding-16 justify'>
+          The percy centre is a community and commercial venue for hire,
+          with a variety of rooms and spaces available to suit your needs.
+        </h5>
 
-      <p class='text-grey'>
-        The premises is composed of a reception and waiting room as well as seven spaces
-        each of which is specialised to suit a wide range of activities.
-        Futher information about the individual specifications for each of our spaces
-        as well as prices per hour for hire can be found by clicking the button below.
-      </p>
+        <p class='text-grey justify'>
+          The premises is composed of a reception and waiting room as well as seven spaces
+          each of which is specialised to suit a wide range of activities.
+          Futher information about the individual specifications for each of our spaces
+          as well as prices per hour for hire can be found by clicking the button below.
+        </p>
 
-      <a href='about-facilities.html'
-        class='btn blue round-large padding-large xlarge margin-top'>
-        About our Facilities
-      </a>
-
+        <a href='about-facilities.html'
+          class='btn blue round-large padding-large xlarge margin-top'>
+          About our Facilities
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -184,19 +201,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 </footer>
 
 <script>
-var myIndex = 0;
-carousel();
+//Used to change slides within the slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 9000);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName('mySlides');
+  var dots = document.getElementsByClassName('demo');
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(' purple', '');
+  }
+  x[slideIndex-1].style.display = 'block';
+  dots[slideIndex-1].className += ' purple';
 }
 </script>
 

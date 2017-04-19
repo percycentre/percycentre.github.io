@@ -74,79 +74,91 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 
 <!-- First Grid -->
 <div class='container padding center blue opacity'>
-  <h1 class='padding-16'>Office Staff</h1>
+  <h1 class='padding-16'>Percy Centre Staff</h1>
 </div>
+  <div class='content' style='width:75%'>
+    <div class='row-padding margin-top margin-bottom'>
 
-<div class='content' style='width:75%'>
-  <div class='row-padding margin-top'>
+        <h4 class='panel center padding xlarge round-large blue opacity'>
+          Office Staff
+        </h4>
 
     <div class='third'>
-      <img class='round-large card-4' src='assets/roger.jpg' style='width:100%'>
+      <img class='round-large' src='assets/roger.jpg' style='width:100%'>
       <div class='margin-top margin-bottom'>
-        <button onclick='myFunction('Demo1')' class='btn block blue round-large card-4 large'>
-          Roger
-        </button>
-        <div id='Demo1' class='container hide'>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        <h4 class='left-align xlarge'>
+          Roger Houghton
+        </h4>
+        <p class='text-grey'>
+          Roger is the Center Manager, and as such is responsible for
+          the running the centre and managing its finances, and looking after
+          the Centre and its staff. He is also a member of the Board of Trustees.
+        </p>
+      </div>
+    </div>
+
+    <div class='third'>
+        <img class='round-large card-2' src='assets/claire.jpg' style='width:100%'>
+        <div class='margin-top margin-bottom'>
+
+          <h4 class='left-align xlarge'>
+            Claire Alford
+          </h4>
+          <p class='text-grey'>
+            She is the first point of contact for most enquiries and functions
+            as a high-performance hybrid of accountant, administrator and receptionist
+            all jammed into a tiny smiley package.
           </p>
         </div>
       </div>
-    </div>
-
-    <div class='third'>
-        <img class='round-large card-4' src='assets/claire.jpg' style='width:100%'>
-        <div class='margin-top margin-bottom'>
-          <button onclick='myFunction('Demo1')' class='btn block blue round-large card-4 large'>
-            Claire
-          </button>
-          <div id='Demo1' class='container hide'>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-    </div>
 
       <div class='third'>
-        <img class='round-large card-4' src='assets/teddy.jpg' style='width:100%'>
+        <img class='round-large card-2' src='assets/teddy.jpg' style='width:100%'>
         <div class='margin-top margin-bottom'>
-          <button onclick='myFunction('Demo1')' class='btn block blue round-large card-4 large'>
-            Teddy
-          </button>
-          <div id='Demo1' class='container hide'>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+
+          <h4 class='left-align xlarge'>
+            Teddy South
+          </h4>
+          <p class='text-grey'>
+            The newest addition to the family, Teddy is a small and good natured gnome
+            that was coerced into tidying the filing cabinets in exchange for chocolate
+            biscuits.
+          </p>
         </div>
       </div>
 
-    </div>
   </div>
 </div>
 
 
-
-</div>
-
-
-
 <!-- Second Grid -->
-<div class='container padding center blue opacity'>
-  <h1 class='padding-16'>The Board of Trustees</h1>
-</div>
+<div class='row-padding padding-64 light-grey container'>
 
-<div class='content' style='width:75%'>
-  <div class='row-padding margin-top'>
+  <div class='content' style='width:75%'>
+    <div class='row-padding margin-top margin-bottom'>
 
-    <div class='third'>
-        <img class='round-large' src='assets/img_nature.jpg' style='width:100%'>
-        <div class='panel round-large center grey'>
-          <h5>Jill</h5>
+      <h4 class='panel center padding xlarge round-large blue opacity'>
+        Board of Trustees
+      </h4>
+
+        <div class='third'>
+          <img class='round-large card-2' src='assets/jill3.jpg' style='width:100%'>
+          <div class='margin-top margin-bottom'>
+
+            <h4 class='left-align xlarge'>
+              Jill Furness
+            </h4>
+            <p class='text-grey'>
+            Jill is our resident fitness expert. She runs the Aerobics sessions at
+            the centre, as well as the "FitSteps" Dance classes to put the groove back
+            into your moves!
+            </p>
+
+          </div>
         </div>
-    </div>
 
+    </div>
   </div>
 </div>
 
@@ -186,13 +198,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 <!-- Javascript goes here -->
 
 <script>
-//Used to toggle accordions
-function myFunction(id) {
+// Used to toggle accordions
+function toggleAccordion(id) {
     var x = document.getElementById(id);
-    if (x.className.indexOf('show') == -1) {
-        x.className += ' show';
+    if (x.className.indexOf('hide') == -1) {
+        x.className += ' hide';
     } else {
-        x.className = x.className.replace(' show', '');
+        x.className = x.className.replace(' hide', '');
     }
 }
 </script>
