@@ -15,46 +15,53 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 
 <div class='favicons'>
 	<!-- ****** faviconit.com favicons ****** -->
-  <link rel='shortcut icon' href='/assets/favicon.ico'>
-  <link rel='icon' sizes='16x16 32x32 64x64' href='/assets/favicon.ico'>
-  <link rel='icon' type='image/png' sizes='196x196' href='/assets/favicon-192.png'>
-  <link rel='icon' type='image/png' sizes='160x160' href='/assets/favicon-160.png'>
-  <link rel='icon' type='image/png' sizes='96x96' href='/assets/favicon-96.png'>
-  <link rel='icon' type='image/png' sizes='64x64' href='/assets/favicon-64.png'>
-  <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicon-32.png'>
-  <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicon-16.png'>
-  <link rel='apple-touch-icon' href='/assets/favicon-57.png'>
-  <link rel='apple-touch-icon' sizes='114x114' href='/assets/favicon-114.png'>
-  <link rel='apple-touch-icon' sizes='72x72' href='/assets/favicon-72.png'>
-  <link rel='apple-touch-icon' sizes='144x144' href='/assets/favicon-144.png'>
-  <link rel='apple-touch-icon' sizes='60x60' href='/assets/favicon-60.png'>
-  <link rel='apple-touch-icon' sizes='120x120' href='/assets/favicon-120.png'>
-  <link rel='apple-touch-icon' sizes='76x76' href='/assets/favicon-76.png'>
-  <link rel='apple-touch-icon' sizes='152x152' href='/assets/favicon-152.png'>
-  <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicon-180.png'>
+  <link rel='shortcut icon' href='/assets/favicons/favicon.ico'>
+  <link rel='icon' sizes='16x16 32x32 64x64' href='/assets/favicons/favicon.ico'>
+  <link rel='icon' type='image/png' sizes='196x196' href='/assets/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='160x160' href='/assets/favicons/favicon-160.png'>
+  <link rel='icon' type='image/png' sizes='96x96' href='/assets/favicons/favicon-96.png'>
+  <link rel='icon' type='image/png' sizes='64x64' href='/assets/favicons/favicon-64.png'>
+  <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicons/favicon-32.png'>
+  <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicons/favicon-16.png'>
+  <link rel='apple-touch-icon' href='/assets/favicons/favicon-57.png'>
+  <link rel='apple-touch-icon' sizes='114x114' href='/assets/favicons/favicon-114.png'>
+  <link rel='apple-touch-icon' sizes='72x72' href='/assets/favicons/favicon-72.png'>
+  <link rel='apple-touch-icon' sizes='144x144' href='/assets/favicons/favicon-144.png'>
+  <link rel='apple-touch-icon' sizes='60x60' href='/assets/favicons/favicon-60.png'>
+  <link rel='apple-touch-icon' sizes='120x120' href='/assets/favicons/favicon-120.png'>
+  <link rel='apple-touch-icon' sizes='76x76' href='/assets/favicons/favicon-76.png'>
+  <link rel='apple-touch-icon' sizes='152x152' href='/assets/favicons/favicon-152.png'>
+  <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicons/favicon-180.png'>
   <meta name='msapplication-TileColor' content='#FFFFFF'>
-  <meta name='msapplication-TileImage' content='/assets/favicon-144.png'>
-  <meta name='msapplication-config' content='/browserconfig.xml'>
+  <meta name='msapplication-TileImage' content='/assets/favicons/favicon-144.png'>
+  <meta name='msapplication-config' content='assets/favicons/browserconfig.xml'>
   <!-- ****** faviconit.com favicons ****** -->
 </div>
 
 <!-- Navbar -->
 <div class='top'>
- <div class='bar blue large left-align'>
+ <div class='bar blue card-2 large left-align'>
     <a href='index.html' class='bar-item button hover-white hide-small'><i class='fa fa-home'></i> Home</a>
-       <a class='bar-item button hide-medium hide-large hover-white' href='javascript:void(0);' onclick='openNav()'><i class='fa fa-bars'></i></a>
+    <a class='bar-item button hide-medium hide-large hover-white' href='javascript:void(0);' onclick='openNav()'><i class='fa fa-bars'></i></a>
     <a href='find-us.html' class='bar-item button hide-small hover-white'>Find us</a>
     <a href='calendar.html' class='bar-item button hide-small hover-white'>Calendar</a>
     <a href='contact.html' class='bar-item button hide-small hover-white'>Contact</a>
     <div class='dropdown-hover hide-small'>
     <button class='button hover-white' title='Notifications'>About <i class='fa fa-caret-down'></i></button>
-    <div class='dropdown-content card-2 bar-block'>
-      <a href='about-staff.html' class='bar-item button medium'>Staff</a>
-      <a href='about-facilities.html' class='bar-item button medium'>Facilities</a>
+      <div class='dropdown-content card-4 bar-block'>
+        <a href='about-facilities.html' class='bar-item button medium'>Facilities</a>
+        <a href='about-staff.html' class='bar-item button medium'>Staff</a>
         <a href='about-history.html' class='bar-item button medium'>History</a>
+      </div>
     </div>
-  </div>
- </div>
+    <div class='dropdown-hover hide-small'>
+    <button class='button hover-white' title='Notifications'>Bookings <i class='fa fa-caret-down'></i></button>
+      <div class='dropdown-content card-4 bar-block'>
+        <a href='bookings.html' class='bar-item button medium'>Room Bookings</a>
+        <a href='studio.html' class='bar-item button medium'>Studio Hire</a>
+      </div>
+    </div>
+</div>
 
   <!-- Navbar on small screens -->
   <div id='navMicro' class='bar-block blue hide hide-large hide-medium'>
@@ -62,8 +69,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
     <a href='find-us.html' class='bar-item button hover-white'>Find us</a>
     <a href='calendar.html' class='bar-item button hover-white'>Calendar</a>
     <a href='contact.html' class='bar-item button hover-white'>Contact</a>
-    <a href='about-staff.html' class='bar-item button hover-white'>Staff</a>
+    <a href='bookings.html' class='bar-item button hover-white'>Room Bookings</a>
+    <a href='studio.html' class='bar-item button hover-white'>Studio Hire</a>
     <a href='about-facilities.html' class='bar-item button hover-white'>Facilities</a>
+    <a href='about-staff.html' class='bar-item button hover-white'>Staff</a>
     <a href='about-history.html' class='bar-item button hover-white'>History</a>
   </div>
 </div>
@@ -82,19 +91,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 <div class='row-padding padding-64 container'>
   <div class='content' style='width:75%'>
 
-  <div class='content' style='width:80%'>
-    <div class='panel light-grey round-large card-4 padding-32 center'>
-        <p class='text-grey padding'>
-        If you want to know more about our history than what is listed here,
-        have a look at our full historical archive, where we keep all the documents
-        and historical artifacts that we have access to.
-        </p>
-      <a href='http://www.percycentre.org.uk/history/'
-        class='btn blue round-large padding-large xlarge'>
-        View Archives
-      </a>
+    <div class='content' style='width:80%'>
+      <div class='panel center round-large padding-64 light-grey card-4'>
+          <p class='text-grey padding'>
+          If you want to know more about our history than what is listed here,
+          have a look at our full historical archive, where we keep all the documents
+          and historical artifacts that we have access to.
+          </p>
+        <a href='http://www.percycentre.org.uk/history/'
+          class='btn blue round-large padding-large xlarge'>
+          View Archives
+        </a>
+      </div>
     </div>
-  </div>
 
   </div>
 </div>
@@ -103,14 +112,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 <div class='row-padding container'>
   <div class='content' style='width:75%'>
     <div class='justify'>
-      <p class='text-grey'>
+      <h5 class='padding-16'>
         The Percy Centre, started from humble beginnings as The Percy Boys' Club.
         The club was founded by Godfrey Plumbridge and Jack Wotton in 1940 and was
         originally held in the boiler house of the Percy Congregational Chapel
         (now the Elim Penticostal Church) on Charlotte Street.
         The club encouraged boys to take up boxing and table tennis as a way to
         keep them entertained and out of trouble.
-      </p>
+      </h5>
 
       <p class='text-grey'>
         By 1947 the club had moved to the Corn Market on Walcot Street, and its activities
@@ -163,39 +172,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
         and instead re-opened as The Percy Community Centre we know today,
         providing facilities and activities for the whole community.
       </h5>
-
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class='row-padding light-grey padding-64 container'>
-  <div class='content'>
-    <div class='center'>
-
     </div>
 
   </div>
 </div>
+
 
 <!-- Social Media  -->
 <div class='container card-4 blue center padding-64 opacity'>
-    <h1 class='margin xxlarge'>
-      Your centre. Your community.
-    </h1>
-      <p class='large'>
-        Check out our social media for news and updates!
-      </p>
-      <div class='jumbo padding-8'>
-
-          <a href='https://www.facebook.com/percycentre'
-            class='button round-large fa fa-facebook-official hover-blue hover-opacity text-white'>
-          </a>
-
-          <a href='http://twitter.com/percycentre'
-            class='button round-large fa fa-twitter hover-blue hover-opacity text-white'>
-          </a>
-     </div>
+  <h1 class='margin xxlarge'>
+    Your centre. Your community.
+  </h1>
+  <p class='large'>
+    Check out our social media for news and updates!
+  </p>
+  <div class='jumbo padding-8'>
+    <a href='https://www.facebook.com/percycentre'
+      class='button round-large fa fa-facebook-official hover-blue hover-opacity text-white'>
+    </a>
+    <a href='http://twitter.com/percycentre'
+      class='button round-large fa fa-twitter hover-blue hover-opacity text-white'>
+    </a>
+ </div>
 </div>
 
 

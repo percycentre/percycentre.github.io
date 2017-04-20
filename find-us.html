@@ -15,26 +15,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 
 <div class='favicons'>
 	<!-- ****** faviconit.com favicons ****** -->
-  <link rel='shortcut icon' href='/assets/favicon.ico'>
-  <link rel='icon' sizes='16x16 32x32 64x64' href='/assets/favicon.ico'>
-  <link rel='icon' type='image/png' sizes='196x196' href='/assets/favicon-192.png'>
-  <link rel='icon' type='image/png' sizes='160x160' href='/assets/favicon-160.png'>
-  <link rel='icon' type='image/png' sizes='96x96' href='/assets/favicon-96.png'>
-  <link rel='icon' type='image/png' sizes='64x64' href='/assets/favicon-64.png'>
-  <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicon-32.png'>
-  <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicon-16.png'>
-  <link rel='apple-touch-icon' href='/assets/favicon-57.png'>
-  <link rel='apple-touch-icon' sizes='114x114' href='/assets/favicon-114.png'>
-  <link rel='apple-touch-icon' sizes='72x72' href='/assets/favicon-72.png'>
-  <link rel='apple-touch-icon' sizes='144x144' href='/assets/favicon-144.png'>
-  <link rel='apple-touch-icon' sizes='60x60' href='/assets/favicon-60.png'>
-  <link rel='apple-touch-icon' sizes='120x120' href='/assets/favicon-120.png'>
-  <link rel='apple-touch-icon' sizes='76x76' href='/assets/favicon-76.png'>
-  <link rel='apple-touch-icon' sizes='152x152' href='/assets/favicon-152.png'>
-  <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicon-180.png'>
+  <link rel='shortcut icon' href='/assets/favicons/favicon.ico'>
+  <link rel='icon' sizes='16x16 32x32 64x64' href='/assets/favicons/favicon.ico'>
+  <link rel='icon' type='image/png' sizes='196x196' href='/assets/favicons/favicon-192.png'>
+  <link rel='icon' type='image/png' sizes='160x160' href='/assets/favicons/favicon-160.png'>
+  <link rel='icon' type='image/png' sizes='96x96' href='/assets/favicons/favicon-96.png'>
+  <link rel='icon' type='image/png' sizes='64x64' href='/assets/favicons/favicon-64.png'>
+  <link rel='icon' type='image/png' sizes='32x32' href='/assets/favicons/favicon-32.png'>
+  <link rel='icon' type='image/png' sizes='16x16' href='/assets/favicons/favicon-16.png'>
+  <link rel='apple-touch-icon' href='/assets/favicons/favicon-57.png'>
+  <link rel='apple-touch-icon' sizes='114x114' href='/assets/favicons/favicon-114.png'>
+  <link rel='apple-touch-icon' sizes='72x72' href='/assets/favicons/favicon-72.png'>
+  <link rel='apple-touch-icon' sizes='144x144' href='/assets/favicons/favicon-144.png'>
+  <link rel='apple-touch-icon' sizes='60x60' href='/assets/favicons/favicon-60.png'>
+  <link rel='apple-touch-icon' sizes='120x120' href='/assets/favicons/favicon-120.png'>
+  <link rel='apple-touch-icon' sizes='76x76' href='/assets/favicons/favicon-76.png'>
+  <link rel='apple-touch-icon' sizes='152x152' href='/assets/favicons/favicon-152.png'>
+  <link rel='apple-touch-icon' sizes='180x180' href='/assets/favicons/favicon-180.png'>
   <meta name='msapplication-TileColor' content='#FFFFFF'>
-  <meta name='msapplication-TileImage' content='/assets/favicon-144.png'>
-  <meta name='msapplication-config' content='/browserconfig.xml'>
+  <meta name='msapplication-TileImage' content='/assets/favicons/favicon-144.png'>
+  <meta name='msapplication-config' content='assets/favicons/browserconfig.xml'>
   <!-- ****** faviconit.com favicons ****** -->
 </div>
 
@@ -42,28 +42,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 <div class='top'>
  <div class='bar blue card-2 large left-align'>
     <a href='index.html' class='bar-item button hover-white hide-small'><i class='fa fa-home'></i> Home</a>
-       <a class='bar-item button hide-medium hide-large hover-white' href='javascript:void(0);' onclick='openNav()'><i class='fa fa-bars'></i></a>
+    <a class='bar-item button hide-medium hide-large hover-white' href='javascript:void(0);' onclick='openNav()'><i class='fa fa-bars'></i></a>
     <a href='find-us.html' class='bar-item button hide-small hover-white'>Find us</a>
     <a href='calendar.html' class='bar-item button hide-small hover-white'>Calendar</a>
     <a href='contact.html' class='bar-item button hide-small hover-white'>Contact</a>
     <div class='dropdown-hover hide-small'>
     <button class='button hover-white' title='Notifications'>About <i class='fa fa-caret-down'></i></button>
-    <div class='dropdown-content card-4 bar-block'>
-      <a href='about-staff.html' class='bar-item button medium'>Staff</a>
-      <a href='about-facilities.html' class='bar-item button medium'>Facilities</a>
+      <div class='dropdown-content card-4 bar-block'>
+        <a href='about-facilities.html' class='bar-item button medium'>Facilities</a>
+        <a href='about-staff.html' class='bar-item button medium'>Staff</a>
         <a href='about-history.html' class='bar-item button medium'>History</a>
+      </div>
     </div>
-  </div>
- </div>
+    <div class='dropdown-hover hide-small'>
+    <button class='button hover-white' title='Notifications'>Bookings <i class='fa fa-caret-down'></i></button>
+      <div class='dropdown-content card-4 bar-block'>
+        <a href='bookings.html' class='bar-item button medium'>Room Bookings</a>
+        <a href='studio.html' class='bar-item button medium'>Studio Hire</a>
+      </div>
+    </div>
+</div>
 
   <!-- Navbar on small screens -->
-  <div id='navMicro' class='bar-block card-2 blue hide hide-large hide-medium'>
+  <div id='navMicro' class='bar-block blue hide hide-large hide-medium'>
     <a href='index.html' class='bar-item button large hover-white'><i class='fa fa-home'></i> Home</a>
     <a href='find-us.html' class='bar-item button hover-white'>Find us</a>
     <a href='calendar.html' class='bar-item button hover-white'>Calendar</a>
     <a href='contact.html' class='bar-item button hover-white'>Contact</a>
-    <a href='about-staff.html' class='bar-item button hover-white'>Staff</a>
+    <a href='bookings.html' class='bar-item button hover-white'>Room Bookings</a>
+    <a href='studio.html' class='bar-item button hover-white'>Studio Hire</a>
     <a href='about-facilities.html' class='bar-item button hover-white'>Facilities</a>
+    <a href='about-staff.html' class='bar-item button hover-white'>Staff</a>
     <a href='about-history.html' class='bar-item button hover-white'>History</a>
   </div>
 </div>
@@ -118,22 +127,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 
 <!-- Social Media  -->
 <div class='container card-4 blue center padding-64 opacity'>
-    <h1 class='margin xxlarge'>
-      Your centre. Your community.
-    </h1>
-      <p class='large'>
-        Check out our social media for news and updates!
-      </p>
-      <div class='jumbo padding-8'>
-
-          <a href='https://www.facebook.com/percycentre'
-            class='button round-large fa fa-facebook-official hover-blue hover-opacity text-white'>
-          </a>
-
-          <a href='http://twitter.com/percycentre'
-            class='button round-large fa fa-twitter hover-blue hover-opacity text-white'>
-          </a>
-     </div>
+  <h1 class='margin xxlarge'>
+    Your centre. Your community.
+  </h1>
+  <p class='large'>
+    Check out our social media for news and updates!
+  </p>
+  <div class='jumbo padding-8'>
+    <a href='https://www.facebook.com/percycentre'
+      class='button round-large fa fa-facebook-official hover-blue hover-opacity text-white'>
+    </a>
+    <a href='http://twitter.com/percycentre'
+      class='button round-large fa fa-twitter hover-blue hover-opacity text-white'>
+    </a>
+ </div>
 </div>
 
 
