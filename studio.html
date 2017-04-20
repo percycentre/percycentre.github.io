@@ -49,7 +49,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
     <div class='dropdown-hover hide-small'>
     <button class='button hover-white' title='Notifications'>About <i class='fa fa-caret-down'></i></button>
       <div class='dropdown-content card-4 bar-block'>
-        <a href='about-facilities.html' class='bar-item button medium'>Facilities</a>
         <a href='about-staff.html' class='bar-item button medium'>Staff</a>
         <a href='about-history.html' class='bar-item button medium'>History</a>
       </div>
@@ -71,7 +70,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
     <a href='contact.html' class='bar-item button hover-white'>Contact</a>
     <a href='bookings.html' class='bar-item button hover-white'>Room Bookings</a>
     <a href='studio.html' class='bar-item button hover-white'>Studio Hire</a>
-    <a href='about-facilities.html' class='bar-item button hover-white'>Facilities</a>
     <a href='about-staff.html' class='bar-item button hover-white'>Staff</a>
     <a href='about-history.html' class='bar-item button hover-white'>History</a>
   </div>
@@ -88,6 +86,48 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 
 <!-- First Grid -->
 <div class='row-padding padding-64 container'>
+  <div class='content'>
+    <div class='center'>
+      <div class='content' style='width:75%'>
+        <h1>
+          Ready to book?
+        </h1>
+
+        <p class='text-grey justify'>
+          If you want to hire the studio please fill out and submit our booking
+          request form below. If you require equipment hire services, please also
+          fill out the Equipment Hire form provided below.
+        </p>
+
+        <div class='content hide-small' style='max-width:350px'>
+          <a href='/assets/files/Studio_Booking_Form.doc' download
+            class='btn blue round-large padding-large large margin-top'>
+            Studio Hire Form
+          </a>
+          <a href='/assets/files/Equipment_Hire_Form.doc' download
+            class='btn blue round-large padding-large large margin-top'>
+           Equipment Hire Form
+          </a>
+        </div>
+
+        <div class='content hide-large hide-medium' style='max-width:200px'>
+          <a href='/assets/files/Studio_Booking_Form.doc' download
+            class='btn blue round-large padding-large margin-top'>
+            Studio Hire Form
+          </a>
+          <a href='/assets/files/Equipment_Hire_Form.doc' download
+            class='btn blue round-large padding-large margin-top'>
+           Equipment Hire Form
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class='row-padding padding-64 container light-grey'>
   <div class='content'>
     <div class='center'>
       <div class='content' style='width:75%'>
@@ -112,15 +152,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
           Contact us
         </a>
 
-
-
       </div>
     </div>
   </div>
 </div>
 
-<!-- Second Grid -->
-<div class='row-padding padding-64 container light-grey'>
+<!-- Third Grid -->
+<div class='row-padding padding-64 container'>
   <div class='content center'>
     <div class='center'>
       <div class='content' style='width:75%'>
@@ -128,18 +166,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
           Curious about our track record?
         </h1>
 
-        <p class='text-grey justify'>
-          If you want to hire the studio please fill out and submit our booking
-          request form below. If you require equipment hire services, please also
-          fill out the Equipment Hire form provided below.
+        <p class='text-grey'>
+          Want a taste of some of our past client's work? Have a listen below.
         </p>
 
         <iframe
-          width="100%"
-          height="450"
-          scrolling="no"
-          frameborder="no"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/86212865&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
+          width='100%'
+          height='450'
+          scrolling='no'
+          frameborder='no'
+          src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/86212865&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'>
         </iframe>
 
       </div>
@@ -147,58 +183,117 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
   </div>
 </div>
 
-
-
-
-<!-- Third Grid -->
-<div class='row-padding padding-64 container'>
+<!-- Fourth Grid -->
+<div class='row-padding padding-64 container light-grey'>
   <div class='content'>
     <div class='center'>
       <div class='content' style='width:75%'>
         <h1>
-          Ready to book?
+          What Services do we offer?
         </h1>
 
-        <p class='text-grey justify'>
-          If you want to hire the studio please fill out and submit our booking
-          request form below. If you require equipment hire services, please also
-          fill out the Equipment Hire form provided below.
-        </p>
-        <div class='content' style='max-width:350px'>
-          <a href='/assets/files/Studio_Booking_Form.doc' download
-            class='btn blue round-large padding-large large margin-top'>
-            Studio Hire Form
-          </a>
-          <a href='/assets/files/Equipment_Hire_Form.doc' download
-            class='btn blue round-large padding-large large margin-top'>
-           Equipment Hire Form
-          </a>
-        </div>
+          <button onclick="toggleAccordions('Accordion1')" class='button block white'>
+            Mixing and Mastering
+          </button>
+
+          <div id='Accordion1' class='container hide animate-opacity'>
+            <p class='text-grey justify'>
+              Does my song need to be mixed and mastered?
+              We get asked this question a lot! When tracks are recorded they are
+              usually captured as cleanly as possible but unless the recorded elements
+              have been mixed, the final piece of music will most likey sound
+              unbalanced, low in volume, raw in tone and lack an effective listening
+              experience. Mixing is the process of arranging the multiple, edited
+              tracks into a coherent piece of music, treating them with EQ, dynamics
+              and effects if desired, and ultimately mixing them down into a
+              balanced stereo format that sound professional.
+            </p>
+
+            <iframe
+              width='100%'
+              height='450'
+              scrolling='no'
+              frameborder='no'
+              src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/86214154&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'>
+            </iframe>
+
+            <p class='text-grey justify'>
+              Mastering is the final stage in creating a finished version of an audio project.
+              The stereo mixes are treated to overall EQ, dynamics and effects processing
+              increasing the overall quality of the audio. If the project is an EP or full album,
+              the gaps between tracks and the balance of their relative levels are carefully
+              considered. Finished master tracks are then exported to the standard audio CD
+              resolution of 16bit/44.1kHz.
+            </p>
+
+            <p class='large justify'>
+              <i>
+              “We have a strong ethos of focusing on creating a hi-quality dynamic
+              range relevant to the style of the piece of music and do not just
+              “slam” the volume up on tracks.”
+              </i>
+            </p>
+          </div>
+
+          <button onclick="toggleAccordions('Accordion2')" class='button block white'>
+            Teaching and Production
+          </button>
+          <div id='Accordion2' class='container hide animate-opacity'>
+
+            <p class='text-grey justify'>
+            Since 2007 Percy Community Centre have been developing and delivering
+            high quality music and media projects.  These projects integrate a
+            wide variety of topical content in to accessible creative activities,
+            allowing participants to express themselves and learn new skills
+            whilst engaging with issues or concepts relevant to them. We are now
+            offering this capacity as a reasonably priced service to other groups
+            who may wish to develop similar activities for their staff, or user
+            groups to engage in. We are able to work with groups to develop new
+            projects to suit their interests and curriculum, help them locate
+            funding sources, provide suitable content to support applications
+            and deliver tailor made projects to their target group.
+            </p>
+
+            <p class='large'>
+              We can offer workshops and courses in:
+              <ul class='left-align'>
+                <li> Digital Music </li>
+                <li> Song Writing </li>
+                <li> Professional Music Development </li>
+                <li> Radio Programming </li>
+                <li> Private 1 to 1 tuition and production services </li>
+                <li> Film Making </li>
+              </ul>
+            </p>
+
+            <p class='large justify'>
+              <i>
+
+              </i>
+            </p>
+          </div>
 
       </div>
     </div>
   </div>
 </div>
 
-
 <!-- Social Media  -->
 <div class='container card-4 blue center padding-64 opacity'>
-    <h1 class='margin xxlarge'>
-      Your centre. Your community.
-    </h1>
-      <p class='large'>
-        Check out our social media for news and updates!
-      </p>
-      <div class='jumbo padding-8'>
-
-          <a href='https://www.facebook.com/percycentre'
-            class='button round-large fa fa-facebook-official hover-blue hover-opacity text-white'>
-          </a>
-
-          <a href='http://twitter.com/percycentre'
-            class='button round-large fa fa-twitter hover-blue hover-opacity text-white'>
-          </a>
-     </div>
+  <h1 class='margin xxlarge'>
+    Your centre. Your community.
+  </h1>
+  <p class='large'>
+    Check out our social media for news and updates!
+  </p>
+  <div class='jumbo padding-8'>
+    <a href='https://www.facebook.com/percycentre'
+      class='button round-large fa fa-facebook-official hover-blue hover-opacity text-white'>
+    </a>
+    <a href='http://twitter.com/percycentre'
+      class='button round-large fa fa-twitter hover-blue hover-opacity text-white'>
+    </a>
+ </div>
 </div>
 
 <!-- Footer -->
@@ -211,8 +306,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif}
 </p>
 </footer>
 
+
+
+<!--  Javascript goes here -->
+
 <script>
-//Used to change slides within the slideshow
+// Used to toggle accordions
+function toggleAccordions(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf('show') == -1) {
+        x.className += ' show';
+    } else {
+        x.className = x.className.replace(' show', '');
+    }
+}
+</script>
+
+<script>
+// Used to change slides within the slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
 
